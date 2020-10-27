@@ -1,0 +1,36 @@
+html, body, #__next {
+  height: 100%;
+}
+body {
+  margin: 0;
+}
+
+#__next {
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  top: 0;
+  background-color: blue;
+  display: flex;
+
+  > .title {
+    font-weight: 900;
+    font-size: 30px;
+  }
+
+  > ul {
+    list-style: none;
+  }
+}
+
+.page-content {
+  flex: 1;
+}
+
+.footer {
+  background-color: black;
+  color: white;
+  flex-shrink: 0;
+}
